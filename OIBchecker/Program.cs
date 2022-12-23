@@ -33,9 +33,9 @@
             bool OIBKontrola( string oib)
             {
                 decimal medjuostatak;
-                decimal umnozak, kolicnik;
+                decimal umnozak, kolicnik, ;
                 char znamenka;
-                int vrije_chr;
+                int vrije_chr, medjuzbroj;
                 
                 if ( oib.Length != 11)
                 { return false; }
@@ -54,6 +54,8 @@
                         if (medjuostatak == 0) medjuostatak = 10; 
                         umnozak = medjuostatak * 2; // korak 3.
                         kolicnik = umnozak / 11; //4
+                        medjuzbroj = (int)(11 % kolicnik);
+
 
 
                     }
