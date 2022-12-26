@@ -1,4 +1,7 @@
-﻿namespace OIBchecker
+﻿using OIBcheck;
+
+namespace OIBchecker
+
 {
     internal class Program
     {
@@ -22,9 +25,17 @@
         6. ponavljaju se koraci 2, 3, 4 i 5 dok se ne potroše sve znamenke
         7. razlika izmedju broja 11 i ostatka u zadnjem koraku je kontrolna znamenka; ako je ostatak 1 kontrolna znamenka je 0 (11-1=10, a 10 ima dvije znamenke)
  */
-            string oibZaKontrolu = "69435151530";
-            System.Console.WriteLine("OIB : " + oibZaKontrolu);
-            Console.WriteLine("OIB je ispravan: " + (OIBKontrola(oibZaKontrolu)));
+            string[] oibZaKontrolu ={ "69435151530","23022380874","94648534153","20441175106"};
+
+            OIBchecking oibcheck = new OIBchecking();
+            foreach(string oib in oibZaKontrolu){
+            System.Console.WriteLine("-----------------------------");
+            System.Console.WriteLine("OIB : " + oib);
+            Console.WriteLine("OIB lokal je ispravan: " + (OIBKontrola(oib)));
+            Console.WriteLine("OIB klasa je ispravan: " + (oibcheck.OIBchk(oib)));
+            Console.WriteLine("OIB github klasa je ispravan: " + (Validators.IsValidOIB(oib))); // klasa sa repozitorija: https://github.com/domagojpa/oib-validation/blob/main/CSharp/oib-validation.cs
+            
+            }
 
              bool OIBKontrola( string oib)
             {
@@ -47,7 +58,7 @@
                         
                         medjuzbroj = ostatak + (vrije_chr = (oib[i]) - 48);// korak 5
                     }
-                    System.Console.WriteLine("kont : "+ umnozak +" ostatak : "+ ostatak);
+                    //System.Console.WriteLine("kont : "+ umnozak +" ostatak : "+ ostatak);
                 if ((oib[10]-48)== 11 - ostatak)
                     {
                         return true;

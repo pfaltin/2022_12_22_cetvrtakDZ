@@ -9,6 +9,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Banka.Data", "Banka.Data\Ba
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OIBchecker", "OIBchecker\OIBchecker.csproj", "{A60CA53D-66DA-4537-92AB-7EFBF4E7DBE9}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "OIBchecker", "OIBchecker", "{94253702-3974-4FA0-808C-198F1D8EBF59}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "OIBcheck", "OIBchecker\OIBcheck\OIBcheck.csproj", "{8DBB3F82-3C52-47E4-B09C-4BC653F73EE4}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,11 +31,18 @@ Global
 		{A60CA53D-66DA-4537-92AB-7EFBF4E7DBE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A60CA53D-66DA-4537-92AB-7EFBF4E7DBE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A60CA53D-66DA-4537-92AB-7EFBF4E7DBE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DBB3F82-3C52-47E4-B09C-4BC653F73EE4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DBB3F82-3C52-47E4-B09C-4BC653F73EE4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DBB3F82-3C52-47E4-B09C-4BC653F73EE4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DBB3F82-3C52-47E4-B09C-4BC653F73EE4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {183FF7AA-08BC-4C9E-8C7B-D1D456653160}
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{8DBB3F82-3C52-47E4-B09C-4BC653F73EE4} = {94253702-3974-4FA0-808C-198F1D8EBF59}
 	EndGlobalSection
 EndGlobal
