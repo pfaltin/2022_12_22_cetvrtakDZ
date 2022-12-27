@@ -6,4 +6,9 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Banka.Data\Banka.Data.csproj" />
+    <ProjectReference Include="..\OIBchecker\OIBcheck\OIBcheck.csproj" />    
+  </ItemGroup>
+
 </Project>
