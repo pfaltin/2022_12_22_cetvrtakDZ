@@ -9,6 +9,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\Banka.Data\Banka.Data.csproj" />
+    <ProjectReference Include="..\OIBchecker\OIBcheck\OIBcheck.csproj" />    
+    <ProjectReference Include="..\OIBchecker\OIBchecker.csproj" />
   </ItemGroup>
 
 </Project>
